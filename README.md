@@ -25,12 +25,12 @@ You also need to install C++ build tools in order to do 'npm install', for more 
 If you have git installed on your system, clone the master branch.
 
 ```bash
-$ git clone https://github.com/tornadocash/tornado-cli
+$ git clone https://github.com/k26dr/tornado-cli
 ```
 
 Or, download the archive file from github
 
-https://github.com/tornadocash/tornado-cli/archive/refs/heads/master.zip
+https://github.com/k26dr/tornado-cli/archive/refs/heads/master.zip
 
 After downloading or cloning the repository, you must install necessary libraries using the following command.
 
