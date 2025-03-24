@@ -173,6 +173,8 @@ Done
 
 See a list of more RPCS here: https://chainlist.org/
 
+None of the relayers currently work. I just left them in for archival purposes.
+
 ```json
 {
    "netId1":{
@@ -191,66 +193,6 @@ See a list of more RPCS here: https://chainlist.org/
             "url":"mainnet-v2.poanet.eth",
             "name":"mainnet-v2.poanet.eth",
             "cachedUrl":"https://tornado-mainnet-v2.poa.network/"
-         },
-         "mainnet-v2.relaymy.eth":{
-            "url":"mainnet-v2.relaymy.eth",
-            "name":"mainnet-v2.relaymy.eth",
-            "cachedUrl":"https://mainnet-v2.relaymy.xyz/"
-         },
-         "mainnet-v2.gaasservices.eth":{
-            "url":"mainnet-v2.gaasservices.eth",
-            "name":"mainnet-v2.gaasservices.eth",
-            "cachedUrl":"https://mainnet-v2.gaas.services/"
-         },
-         "mainnet-v2.reasoned.eth":{
-            "url":"mainnet-v2.reasoned.eth",
-            "name":"mainnet-v2.reasoned.eth",
-            "cachedUrl":"https://mainnet-v2.solarsis.net/"
-         },
-         "v2.mainnet.thewizardseye.eth":{
-            "url":"v2.mainnet.thewizardseye.eth",
-            "name":"v2.mainnet.thewizardseye.eth",
-            "cachedUrl":"https://v2.mainnet.thewizardseye.de/"
-         },
-         "v2.odanrot.eth":{
-            "url":"v2.odanrot.eth",
-            "name":"v2.odanrot.eth",
-            "cachedUrl":"https://tcrv2.avado.cloud/"
-         },
-         "mainnet-v2.releth.eth":{
-            "url":"mainnet-v2.releth.eth",
-            "name":"mainnet-v2.releth.eth",
-            "cachedUrl":"https://mainnet-v2.reloch.net/"
-         },
-         "mainnet.t-relay.eth":{
-            "url":"mainnet.t-relay.eth",
-            "name":"mainnet.t-relay.eth",
-            "cachedUrl":"https://mainnet.t-relay.online/"
-         },
-         "mainnet-v2.therelayer.eth":{
-            "url":"mainnet-v2.therelayer.eth",
-            "name":"mainnet-v2.therelayer.eth",
-            "cachedUrl":"https://mainnet-v2.therelayer.xyz/"
-         },
-         "mainnet.relayer-service.eth":{
-            "url":"mainnet.relayer-service.eth",
-            "name":"mainnet.relayer-service.eth",
-            "cachedUrl":"https://mainnet-relayer.hertz.zone/"
-         },
-         "mainnet-v2.tornadosolutions.eth":{
-            "url":"mainnet-v2.tornadosolutions.eth",
-            "name":"mainnet-v2.tornadosolutions.eth",
-            "cachedUrl":"https://mainnet-v2.tornado.solutions/"
-         },
-         "mainnet-v2.torn.eth":{
-            "url":"mainnet-v2.torn.eth",
-            "name":"mainnet-v2.torn.eth",
-            "cachedUrl":"https://mainnet-v2.torn.cash/"
-         },
-         "mainnet-v2.defidevotee.eth":{
-            "url":"mainnet-v2.defidevotee.eth",
-            "name":"mainnet-v2.defidevotee.eth",
-            "cachedUrl":"https://mainnet-v2.defidevotee.xyz/"
          }
       }
    },
