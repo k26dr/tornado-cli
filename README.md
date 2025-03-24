@@ -4,6 +4,7 @@ Command line tool to interact with Tornado Cash.
 
 ## Release Notes
 
+- Warning: This code is very recently updated! Use with caution. I have only tested up to 0.1 ETH and cannot vouch that all the new code works perfectly. Check the diff with the original repo if you want to be sure everything works. 
 - This is a fork of the original Tornado Cash CLI repo at https://github.com/tornadocash/tornado-cli. The original code was abandoned in 2022 and no longer works. As of March 24, 2025 this is the only functioning version I'm aware of. 
 - The code has been updated to support EIP-1559 on all chains and remove broken dependencies.
 - The caches for ETH on Ethereum mainnet are updated to March 24, 2025. The remaining chains and assets are not up to date, so using those deposit contracts will be slower and may require a paid RPC to generate the merkle tree (requires syncing all deposits on that contract from 2022 to now).
