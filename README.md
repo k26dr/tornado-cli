@@ -171,7 +171,7 @@ Done
 
 ### List of public rpc & relayers for withdrawal
 
-This is an old list of functioning RPCs. These may come back now that OFAC restrictions have been lifted. If you want one that's proven to work, use the first one on the list, SecureRPC.
+See a list of more RPCS here: https://chainlist.org/
 
 ```json
 {
