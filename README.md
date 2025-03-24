@@ -37,7 +37,8 @@ After downloading or cloning the repository, you must install necessary librarie
 
 ```bash
 $ cd tornado-cli
-$ npm install
+$ npm install --global yarn
+$ yarn
 ```
 
 If you want to use Tor connection to conceal ip address, install [Tor Browser](https://www.torproject.org/download/) and add `--tor 9150` for `cli.js` if you connect tor with browser. (For non tor-browser tor service you can use the default 9050 port).
