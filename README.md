@@ -171,5 +171,7 @@ Done
 
 ### List of public rpc & relayers for withdrawal
 
-See a list of RPCS here: https://chainlist.org/ . Not all of them have lifted sanctions yet, so you may have to test multiple until you get one to work. DRPC and SecureRPC are the ones that seem to work most reliably.
+See a list of RPCS here: https://chainlist.org/ 
+
+Not all of them have lifted sanctions yet, so you may have to test multiple until you get one to work. DRPC and SecureRPC are the ones that seem to work most reliably.
 
