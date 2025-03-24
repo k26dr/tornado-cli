@@ -1,23 +1,30 @@
 "use strict";
 var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
     return function (d, b) {
         extendStatics(d, b);
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-var __assign = (this && this.__assign) || Object.assign || function(t) {
-    for (var s, i = 1, n = arguments.length; i < n; i++) {
-        s = arguments[i];
-        for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-            t[p] = s[p];
-    }
-    return t;
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.XMLHttpRequest = void 0;
 var http = require("http");
 var https = require("https");
 var url = require("url");
@@ -257,7 +264,7 @@ var XMLHttpRequest = /** @class */ (function (_super) {
         }
     };
     XMLHttpRequest.prototype._finalizeHeaders = function () {
-        this._headers = __assign({}, this._headers, { Connection: 'keep-alive', Host: this._url.host, 'User-Agent': this._userAgent }, this._anonymous ? { Referer: 'about:blank' } : {});
+        this._headers = __assign(__assign(__assign({}, this._headers), { Connection: 'keep-alive', Host: this._url.host, 'User-Agent': this._userAgent }), this._anonymous ? { Referer: 'about:blank' } : {});
         this.upload._finalizeHeaders(this._headers, this._loweredHeaders);
     };
     XMLHttpRequest.prototype._onHttpResponse = function (request, response) {

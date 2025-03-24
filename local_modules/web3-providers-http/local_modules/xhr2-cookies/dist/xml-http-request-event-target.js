@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.XMLHttpRequestEventTarget = void 0;
 var XMLHttpRequestEventTarget = /** @class */ (function () {
     function XMLHttpRequestEventTarget() {
         this.listeners = {};

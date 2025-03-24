@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ProgressEvent = void 0;
 var ProgressEvent = /** @class */ (function () {
     function ProgressEvent(type) {
         this.type = type;
