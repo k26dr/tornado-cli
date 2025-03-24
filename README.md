@@ -170,12 +170,16 @@ Done
 
 ### List of public rpc & relayers for withdrawal
 
-Infura API key fetched from https://rpc.info (Same one with Metamask)
+This is an old list of functioning RPCs. These may come back now that OFAC restrictions have been lifted. If you want one that's proven to work, use the first one on the list, SecureRPC.
 
 ```json
 {
    "netId1":{
       "rpcUrls":{
+         "SecureRPC":{
+           "name":"SecureRPC",
+           "url":"https://api.securerpc.com/v1"
+         },
          "Infura":{
             "name":"Infura",
             "url":"https://mainnet.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161"
