@@ -177,4 +177,4 @@ Not all of them have lifted sanctions yet, so you may have to test multiple unti
 
 There's no functioning relayers as far as I'm aware, so you'll have to find one on your own. Most countries have banned relaying, so it may be tough to find one. 
 
-Relaying is optional. Tornado works without it. Relaying allows empty accounts to receive ETH from Tornado by paying the gas fee from the withdraw on their behalf. Your best bet is to find a local dealer or friend to fund an account with ETH using cash and start from there if that's what you want. 
+Relaying is optional. Tornado works without it. Relaying allows empty accounts to receive ETH from Tornado by paying the gas fee from the withdraw on their behalf. Currently you will to have to use an accoun that already has ETH to pay the fee. 
