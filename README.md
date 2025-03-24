@@ -1,6 +1,6 @@
 # Tornado-CLI
 
-Command line tool to interact with [Tornado Cash](https://tornadocash.eth.link).
+Command line tool to interact with Tornado Cash. 
 
 ## Release Notes
 
