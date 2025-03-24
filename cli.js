@@ -18,7 +18,6 @@ const { toWei, fromWei, toBN, BN } = require('web3-utils');
 const BigNumber = require('bignumber.js');
 const config = require('./config');
 const program = require('commander');
-const { GasPriceOracle } = require('gas-price-oracle');
 const SocksProxyAgent = require('socks-proxy-agent');
 const is_ip_private = require('private-ip');
 
@@ -121,7 +120,7 @@ async function generateTransaction(to, encodedData, value = 0) {
         value                : value,
         nonce                : nonce,
         maxFeePerGas         : gasPrice,
-        maxPriorityFeePerGas : web3.utils.toHex(web3.utils.toWei('3', 'gwei')),
+        maxPriorityFeePerGas : gasPrice,
         gas                  : gasLimit,
         data                 : encodedData
       }
@@ -701,22 +700,8 @@ function gasPrices(value = 5) {
 
 async function fetchGasPrice() {
   try {
-    const options = {
-      chainId: netId
-    }
-    // Bump fees for Ethereum network
-    if (netId == 1) {
-      const oracle = new GasPriceOracle(options);
-      const gas = await oracle.gasPrices();
-      return gasPricesETH(gas.instant);
-    } else if (netId == 5 || isTestRPC) {
-      const web3GasPrice = await web3.eth.getGasPrice();
-      return web3GasPrice;
-    } else {
-      const oracle = new GasPriceOracle(options);
-      const gas = await oracle.gasPrices();
-      return gasPrices(gas.instant);
-    }
+    const web3GasPrice = await web3.eth.getGasPrice();
+    return web3GasPrice;
   } catch (err) {
     throw new Error(`Method fetchGasPrice has error ${err.message}`);
   }
@@ -1227,9 +1212,10 @@ async function init({ rpc, noteNetId, currency = 'dai', amount = '100', balanceC
     const isIpPrivate = is_ip_private(rpcHost);
     if (!isIpPrivate && !rpc.includes("localhost") && !privateRpc) {
       try {
-        const fetchRemoteIP = await axios.get('https://ip.tornado.cash', ipOptions);
-        const { country, ip } = fetchRemoteIP.data;
-        console.log('Your remote IP address is', ip, 'from', country + '.');
+        // NOTE: This website no longer exists so I've disabled this bit of code - Kedar Iyer
+        //const fetchRemoteIP = await axios.get('https://ip.tornado.cash', ipOptions);
+        //const { country, ip } = fetchRemoteIP.data;
+        //console.log('Your remote IP address is', ip, 'from', country + '.');
       } catch (error) {
         console.error('Could not fetch remote IP from ip.tornado.cash, use VPN if the problem repeats.');
       }
