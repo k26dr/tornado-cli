@@ -4,7 +4,7 @@ Command line tool to interact with [Tornado Cash](https://tornadocash.eth.link).
 
 ## Release Notes
 
-- This is a fork of the original Tornado Cash CLI repo at https://github.com/tornadocash/tornado-cli. 
+- This is a fork of the original Tornado Cash CLI repo at https://github.com/tornadocash/tornado-cli. The original code was abandoned in 2022 and no longer works. This is the only currently functioning version as far as I'm aware. 
 - The code has been updated to support EIP-1559 on all chains and remove broken dependencies.
 - The cache for 0.1 ETH has been updated so far. The caches for the other deposit contracts need updating so contributions are appreciated on that. 
 
