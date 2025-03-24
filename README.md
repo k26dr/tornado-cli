@@ -6,8 +6,8 @@ Command line tool to interact with Tornado Cash.
 
 - This is a fork of the original Tornado Cash CLI repo at https://github.com/tornadocash/tornado-cli. The original code was abandoned in 2022 and no longer works. As of March 24, 2025 this is the only functioning version I'm aware of. 
 - The code has been updated to support EIP-1559 on all chains and remove broken dependencies.
-- The caches for 0.1 ETH and 1 ETH deposits on ETH mainnet are updated to March 24, 2025. The remaining caches are not up to date, so using those deposit contracts will be slower and may require a paid RPC.
-- The only tested RPC is SecureRPC on ETH mainnet. The other RPCs seem not to have lifted the sanctions yet. If they do, I will update them here. Until then, all the old RPCs are still listed in the [RPCs](#list-of-public-rpc--relayers-for-withdrawal) section even if they aren't accepting Tornado transactions. 
+- The caches for ETH on Ethereum mainnet are updated to March 24, 2025. The remaining chains and assets are not up to date, so using those deposit contracts will be slower and may require a paid RPC to generate the merkle tree (requires syncing all deposits on that contract from 2022 to now).
+- The only tested RPC is SecureRPC (https://api.securerpc.com/v1) on ETH mainnet. The other RPCs seem not to have lifted the sanctions yet. If they do, I will update them here. Until then, all the old RPCs are still listed in the [RPCs](#list-of-public-rpc--relayers-for-withdrawal) section even if they aren't accepting Tornado transactions. 
 
 ### Warning!
 Current cli version doesn't support [Anonymity Mining](https://tornado-cash.medium.com/tornado-cash-governance-proposal-a55c5c7d0703)
