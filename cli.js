@@ -1280,7 +1280,7 @@ async function init({ rpc, noteNetId, currency = 'dai', amount = '100', balanceC
       tornadoInstance = config.deployments[`netId${netId}`][currency].instanceAddress[amount];
       deployedBlockNumber = config.deployments[`netId${netId}`][currency].deployedBlockNumber[amount];
 
-      if (!tornadoAddress) {
+      if (!tornadoAddress || !tornadoInstance) {
         throw new Error();
       }
       tokenAddress = currency !== netSymbol.toLowerCase() ? config.deployments[`netId${netId}`][currency].tokenAddress : null;
