@@ -1321,7 +1321,7 @@ async function main() {
     program
       .command('createNote <currency> <amount> <chainId>')
       .description(
-        'Create deposit note and invoice, allows generating private key like deposit notes from secure, offline environment. The currency is one of (ETH|DAI|cDAI|USDC|cUSDC|USDT). The amount depends on currency, see config.js file or visit https://tornado.cash.'
+        'Create deposit note and invoice, allows generating private key like deposit notes from secure, offline environment. The currency is one of (ETH|DAI|cDAI|USDC|cUSDC|USDT). The amount depends on currency, see config.js file.'
       )
       .action(async (currency, amount, chainId) => {
         currency = currency.toLowerCase();
@@ -1345,7 +1345,7 @@ async function main() {
     program
       .command('deposit <currency> <amount>')
       .description(
-        'Submit a deposit of specified currency and amount from default eth account and return the resulting note. The currency is one of (ETH|DAI|cDAI|USDC|cUSDC|USDT). The amount depends on currency, see config.js file or visit https://tornado.cash.'
+        'Submit a deposit of specified currency and amount from default eth account and return the resulting note. The currency is one of (ETH|DAI|cDAI|USDC|cUSDC|USDT). The amount depends on currency, see config.js file.'
       )
       .action(async (currency, amount) => {
         if (program.onlyrpc) {
